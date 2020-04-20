@@ -72,18 +72,18 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
                 $message = isset($message) ? "Message: $message<br><br>" : '';
 
                 $mail->Body = $name . $email . $phone . $company . $message . '<br><br><br>Mensaje enviado de: ' . $_SERVER['HTTP_REFERER'];
-                $mail->send();
+                // $mail->send();
                 
-                $mail = new PHPMailer();
-                $mail->AddAddress($email);
-                $mail->Body = "<strong>Gracias por contactarnos $name</strong><br><br> 
-                                <p>Te dejamos a continuación un enlace a nuestra nota para aprender más sobre:</p><br></br>
-                                <b>¿Por qué tu empresa tiene que estar en Internet?</b><br></br>
-                                <a href='https://chimpancedigital.com.ar/desarrolloweb/' style='background:#36a9e1;padding:15px 10px; width:150px; height:80px;color:white;'>Ver nota</a><br></br>
-                                Nos comunicaremos a la brevedad<br>";
+                // $mail = new PHPMailer();
+                
+                // $mail->Body = "<strong>Gracias por contactarnos $name</strong><br><br> 
+                //                 <p>Te dejamos a continuación un enlace a nuestra nota para aprender más sobre:</p><br></br>
+                //                 <b>¿Por qué tu empresa tiene que estar en Internet?</b><br></br>
+                //                 <a href='' style=''>Ver nota</a><br></br>
+                //                 Nos comunicaremos a la brevedad<br>";
                 
                 
-                $mail->send();
+                // $mail->send();
                 if (!$mail->send()) {
                     $mail_enviado=false;
                     $mail_error .= 'Mailer Error: '.$mail->ErrorInfo;

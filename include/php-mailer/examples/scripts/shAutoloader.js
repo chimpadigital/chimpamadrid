@@ -61,7 +61,7 @@ sh.autoloader = function()
 		addBrush(aliases, url);
 	}
 
-	// dynamically add  /> tags to the document body
+	// dynamically add <script /> tags to the document body
 	for (i = 0; i < elements.length; i++)
 	{
 		var url = brushes[elements[i].params.brush];

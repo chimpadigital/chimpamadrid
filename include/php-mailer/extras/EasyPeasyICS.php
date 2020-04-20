@@ -21,12 +21,12 @@ class EasyPeasyICS
 {
     /**
      * The name of the calendar
-     * @type string
+     * @var string
      */
     protected $calendarName;
     /**
      * The array of events to add to this calendar
-     * @type array
+     * @var array
      */
     protected $events = array();
 
@@ -34,7 +34,7 @@ class EasyPeasyICS
      * Constructor
      * @param string $calendarName
      */
-    public function __construct($calendar)
+    public function __construct($calendarName = "")
     {
         $this->calendarName = $calendarName;
     }
@@ -120,7 +120,7 @@ PRODID:-//hacksw/handcal//NONSGML v1.0//EN';
 BEGIN:VEVENT
 UID:' . $event['uid'] . '
 DTSTAMP:' . gmdate('Ymd') . 'T' . gmdate('His') . 'Z
-START: DT' . $event['start'] . '
+DTSTART:' . $event['start'] . '
 DTEND:' . $event['end'] . '
 SUMMARY:' . str_replace("\n", "\\n", $event['summary']) . '
 DESCRIPTION:' . str_replace("\n", "\\n", $event['description']) . '

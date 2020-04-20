@@ -218,8 +218,8 @@ h6,
 
   h3,
   .h3 {
-    font-size: 1.35714286em;
-    line-height: 1.5714286em; }
+    font-size: 1.3em;
+    line-height: 1.5em; }
 
   .lead {
     font-size: 1.35714286em;
@@ -2184,7 +2184,7 @@ HEADER: Responsive
 
   }
   .text-middle{
-    padding-top: 7vh!important;
+    padding-top: 5vh!important;
     vertical-align: inherit!important;
   }
   /*TopBar*/
@@ -10190,7 +10190,7 @@ section[data-parallax-image] {
   font-family: "Open Sans"; }
 
 .text-medium {
-  font-size: 53px !important;
+  font-size: 53px;
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 60px!important; }
@@ -10201,7 +10201,7 @@ body.device-xs .text-medium-light {
 
 body.device-xxs .text-medium,
 body.device-xxs .text-medium-light {
-  font-size: 30px !important; }
+  font-size: 26px !important; }
 
 .text-large-light,
 .text-large-light span,
@@ -12653,6 +12653,11 @@ Bootstrap row colums fixes
   .col-sm-12 {
     width: 100%; } }
 @media (max-width: 991px) {
+
+  .text-medium {
+    margin-bottom: 40px!important;
+}
+
   .col-sm-7,
   .col-sm-8,
   .col-sm-9,
