@@ -51,7 +51,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
      
      	        $mail->IsHTML(true);                                    // Set email format to HTML
                 $mail->CharSet = 'UTF-8';
-     
+
                 $mail->From = $email;
                 $mail->FromName = $name;
                 $mail->AddCC ('contacto@chimpancedigital.com.ar');
@@ -72,7 +72,18 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
                 $message = isset($message) ? "Message: $message<br><br>" : '';
 
                 $mail->Body = $name . $email . $phone . $company . $message . '<br><br><br>Mensaje enviado de: ' . $_SERVER['HTTP_REFERER'];
+                $mail->send();
                 
+                $mail = new PHPMailer();
+                $mail->AddAddress($email);
+                $mail->Body = "<strong>Gracias por contactarnos $name</strong><br><br> 
+                                <p>Te dejamos a continuación un enlace a nuestra nota para aprender más sobre:</p><br></br>
+                                <b>¿Por qué tu empresa tiene que estar en Internet?</b><br></br>
+                                <a href='https://chimpancedigital.com.ar/desarrolloweb/' style='background:#36a9e1;padding:15px 10px; width:150px; height:80px;color:white;'>Ver nota</a><br></br>
+                                Nos comunicaremos a la brevedad<br>";
+                
+                
+                $mail->send();
                 if (!$mail->send()) {
                     $mail_enviado=false;
                     $mail_error .= 'Mailer Error: '.$mail->ErrorInfo;
@@ -80,6 +91,8 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
                     $mail_enviado=true;
                     $mail_error='Mensaje Enviado, Gracias';
                 }
+
+            
                 // Ahora se envía el e-mail usando la función mail() de PHP
                 //$headers = 'From: Ralseff <info@ralseff.com>' . "\r\n" .
                 //    'Reply-To: noreply@ralseff.com' . "\r\n" .
