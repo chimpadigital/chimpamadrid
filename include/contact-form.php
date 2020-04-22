@@ -46,15 +46,15 @@ $cuerpo1 = $name . $email . $phone . $company . $message . '<br><br><br>Mensaje 
 $cuerpo2='
             <table width="500" align="center" cellpadding="0" cellspacing="0">
                 <tr>
-                    <td style="width:500px; height:300px; padding:25px 40px;background-color:#0095c8;">
-                        <h4 style="color:#ffffff">Gracias por contactarnos</h4>
+                    <td style="width:500px; height:40px; padding:25px 40px;background-color:#0095c8;">
+                        <h1 style="color:#ffffff">Gracias por contactarnos</h1>
                     </td>
                 </tr>
                 <tr>
                     <td style=""><p>Te dejamos a continuación un enlace a nuestra nota para aprender más sobre:</p></td>
                 </tr>
                 <tr>
-                    <td><h5 style="color:#0095c8">¿Por qué tu empresa tiene que estar en Internet?</h5></td>
+                    <td><h3 style="color:#0095c8">¿Por qué tu empresa tiene que estar en Internet?</h3></td>
                 </tr>
                 <tr>
                     <td><a href="https://chimpancedigital.com.ar/por-que-tu-empresa-tiene-que-estar-en-internet/" style="background:#36a9e1;padding:15px 10px; width:150px; height:80px;color:white;">Ver nota</a></td>
