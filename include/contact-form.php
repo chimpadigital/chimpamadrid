@@ -142,7 +142,7 @@ function enviarMail($to,$asunto,$cuerpo){
         // Send using SMTP
         
         //Recipients
-        $mail->setFrom('sprados@chimpancedigital.com.ar', 'Chimpance Digital');
+        $mail->setFrom('contacto@chimpancedigital.com.ar', 'Chimpance Digital');
         $mail->addAddress($to);               // Name is optional
         
         // Content
