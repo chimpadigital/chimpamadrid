@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.318 60.577">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-width: 2px;
+      }
+
+      .cls-1 {
+        stroke: #7acbf4;
+      }
+
+      .cls-2 {
+        stroke: #6ed0f5;
+      }
+    </style>
+  </defs>
+  <g id="flecha" transform="translate(-138.293 -670.5)">
+    <path id="Path_116" data-name="Path 116" class="cls-1" d="M139,719.211l10.452,10.452L159.9,719.211"/>
+    <line id="Line_2" data-name="Line 2" class="cls-2" y2="59" transform="translate(149.5 670.5)"/>
+  </g>
+</svg>
