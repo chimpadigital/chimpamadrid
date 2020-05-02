@@ -20,7 +20,7 @@ $email = $_POST["widget-contact-form-email"];
 $phone = isset($_POST["widget-contact-form-phone"]) ? $_POST["widget-contact-form-phone"] : null;
 $company = isset($_POST["widget-contact-form-company"]) ? $_POST["widget-contact-form-company"] : null;
 // $service = isset($_POST["widget-contact-form-service"]) ? $_POST["widget-contact-form-service"] : null;
-$subject = isset($_POST["widget-contact-form-subject"]) ? $_POST["widget-contact-form-subject"] : 'Consulta landing tupaginaweb';
+$subject = isset($_POST["widget-contact-form-subject"]) ? $_POST["widget-contact-form-subject"] : 'Consulta landing tupaginaweb AW';
 $subject_user = '¿Por qué es crucial tener una página web hoy?';
 $message = isset($_POST["widget-contact-form-message"]) ? $_POST["widget-contact-form-message"] : null;
 
